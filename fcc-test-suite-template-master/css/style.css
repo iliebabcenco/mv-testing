@@ -2,10 +2,13 @@ body {
     text-align: center;
     background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
     color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
 }
   form {
     margin: auto;
-    width: 40%;
+    width: 500px;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -13,6 +16,7 @@ body {
     border-radius: 5px;
     padding: 20px;
     color: white;
+    
   }
   .recommend label {
       padding-top: 3px;
@@ -55,3 +59,19 @@ body {
     margin-bottom: 5px;
     margin-top: 5px;
 } 
+@media (max-width: 700px) {
+    form{ 
+        width: 100%;
+       
+       
+    }
+    body {
+        margin: 0;
+        height: 100%;
+        
+    }
+}
+#description {
+    font-style: italic;
+    margin-bottom: 2%;
+}
